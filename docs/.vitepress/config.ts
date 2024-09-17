@@ -9,7 +9,7 @@ export default defineConfig({
       message:
         'Released under the <a href="https://github.com/fedimod/fires/blob/main/LICENSE">AGPL License</a>.',
       copyright:
-        'Copyright © 2024 <a href="/contributors">FediMod FIRES Project</a>',
+        'Copyright © 2024 <a href="/contributors/">FediMod FIRES Project</a>',
     },
 
     // https://vitepress.dev/reference/default-theme-config
@@ -26,8 +26,8 @@ export default defineConfig({
             link: "/manuals/reference-server/",
           },
           {
-            text: "Example Publisher",
-            link: "/manuals/example-publisher/",
+            text: "Example Provider",
+            link: "/manuals/example-provider/",
           },
           {
             text: "Example Consumer",
@@ -53,6 +53,23 @@ export default defineConfig({
               link: "/concepts/advisories-and-recommendations",
             },
             { text: "Retractions", link: "/concepts/retractions" },
+          ],
+        },
+        {
+          text: "Definitions",
+          items: [
+            {
+              text: "Data Provider",
+              link: "/concepts/terms/data-provider",
+            },
+            {
+              text: "Data Consumer",
+              link: "/concepts/terms/data-consumer",
+            },
+            {
+              text: "Label Provider",
+              link: "/concepts/terms/label-provider",
+            },
           ],
         },
         {
@@ -114,13 +131,13 @@ export default defineConfig({
           ],
         },
       ],
-      "/manuals/example-publisher": [
+      "/manuals/example-provider": [
         {
-          text: "Example Publisher",
+          text: "Example Provider",
           items: [
             {
               text: "Introduction",
-              link: "/manuals/example-publisher/",
+              link: "/manuals/example-provider/",
             },
           ],
         },
