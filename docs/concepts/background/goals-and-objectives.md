@@ -10,7 +10,7 @@ In more definitive terms: **FIRES only provides moderation advisories and recomm
 
 **FIRES is not designed for creation of denylists**, and although you could use it for that purpose, the intended way of using the data is not through bulk automated imports of data, instead we encourage instance operators to review the data contained and to make their own decisions based upon the data.
 
-**FIRES is not for a centralised service**, but instead it is designed to be hosted by data providers who then integrate with it to supply their data to downstream [consumers](../terms/data-consumers). Whether those providers are providing data to reduce illegal content, racism, transphobia, or other bigotry is entirely up to them, and how they source & manage their data is entirely up to them.
+**FIRES is not for a centralised service**, but instead it is designed to be hosted by data providers who then integrate with it to supply their data to downstream [consumers](../terms/data-consumer). Whether those providers are providing data to reduce illegal content, racism, transphobia, or other bigotry is entirely up to them, and how they source & manage their data is entirely up to them.
 
 Other software should integrate with the server and consume the published data, handling the application of advisories and recommendations to downstream instances, ideally with a workflow that actively involves the instance operator.
 
