@@ -1,6 +1,6 @@
 # FIRES
 
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0) 
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 **FediMod FIRES** is a protocol and reference server implementation for storing and distributing moderation data over time for the Fediverse. It is intended to be used by teams to provide moderation recommendations and advisories, based on their research, to moderators and administrators of Fediverse servers.
 
@@ -8,14 +8,12 @@
 
 **FediMod** is project to provide a home for various Fediverse moderation tools and projects.
 
-
 ## Features
 
 - **Only provides moderation advisories and recommendations**, rather than prescribing that a given action must be taken.
 - **Not designed for the creation of denylists**, moderators should always make the final decision that is right for their community.
 - **Embraces linked data and multiple data sources**, we borrow ideas from linked data, to ensure that all moderation advisories and recommendations are well structured and contain enough information for Moderators to make an informed decision.
 - **Allows resumable retrieval of data**, instead of being push-based which requires maintaining a network connection to the FIRES server, FIRES is designed to allow clients to periodically refresh their copy of the data.
-
 
 ## Documentation
 
@@ -27,6 +25,11 @@ The documentation to FIRES is split into a few sections:
 
 ## Acknowledgements
 
-[NLNet placeholder]
+<a href="https://NLnet.nl" class="funder-logo" name="ack"><img src="/nlnet-logo.svg?url" alt="Logo NLnet: abstract logo of four people seen from above"></a>
+<a href="https://NLnet.nl/NGI0" class="funder-logo"><img src="/NGI0Entrust_tag.svg?url" alt="Logo NGI Zero: letterlogo shaped like a tag"> </a>
 
-[Nivenly website]
+This project was funded through the <a href="https://NLnet.nl/entrust">NGI0 Entrust</a> Fund, a fund established by <a href="https://nlnet.nl">NLnet</a> with financial support from the European Commission's <a href="https://ngi.eu">Next Generation Internet</a> programme, under the aegis of <a href="https://commission.europa.eu/about-european-commission/departments-and-executive-agencies/communications-networks-content-and-technology_en">DG Communications Networks, Content and Technology</a> under grant agreement N<sup>o</sup> 101069594.
+<br><br><br>
+<a href="https://nivenly.org" class="funder-logo"><img src="/nivenly-foundation-logo-with-text.png?url" alt="Logo: Nivenly Foundation"></a>
+
+The writing of the proposal outlining FIRES was funded by <a href="https://nivenly.org">Nivenly Foundation</a>.
