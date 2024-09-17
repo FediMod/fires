@@ -25,11 +25,11 @@ The documentation to FIRES is split into a few sections:
 
 ## Acknowledgements
 
-<a href="https://NLnet.nl" class="funder-logo" name="ack"><img src="/nlnet-logo.svg?url" alt="Logo NLnet: abstract logo of four people seen from above"></a>
-<a href="https://NLnet.nl/NGI0" class="funder-logo"><img src="/NGI0Entrust_tag.svg?url" alt="Logo NGI Zero: letterlogo shaped like a tag"> </a>
+[<img src="/docs/public/nlnet-logo.svg" alt="NLNet" height="80px" />](http://nlnet.nl)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="/docs/public/NGI0Entrust_tag.svg" alt="NGI Zero" height="80px"/>](http://nlnet.nl/NGI0)
 
 This project was funded through the <a href="https://NLnet.nl/entrust">NGI0 Entrust</a> Fund, a fund established by <a href="https://nlnet.nl">NLnet</a> with financial support from the European Commission's <a href="https://ngi.eu">Next Generation Internet</a> programme, under the aegis of <a href="https://commission.europa.eu/about-european-commission/departments-and-executive-agencies/communications-networks-content-and-technology_en">DG Communications Networks, Content and Technology</a> under grant agreement N<sup>o</sup> 101069594.
 <br><br><br>
-<a href="https://nivenly.org" class="funder-logo"><img src="/nivenly-foundation-logo-with-text.png?url" alt="Logo: Nivenly Foundation"></a>
+[<img src="/docs/public/nivenly-foundation-logo-with-text.png" alt="Nivenly Foundation" height="80px"/>](http://nivenly.org)
 
 The writing of the proposal outlining FIRES was funded by <a href="https://nivenly.org">Nivenly Foundation</a>.
