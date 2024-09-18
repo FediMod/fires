@@ -6,7 +6,18 @@ export default defineConfig({
   description: "Fediverse moderation Intelligence Replication Endpoint Server",
   head: [
     ["meta", { property: "og:image", content: "/opengraph-banner.png" }],
+    [
+      "meta",
+      {
+        property: "og:image:alt",
+        content:
+          "FediMod FIRES - Fediverse Intelligence Replication Endpoint Server. A protocol and reference server implementation for storing and distributing moderation advisories and recommendations over time for the Fediverse.",
+      },
+    ],
+    ["meta", { property: "og:image:width", content: "1024" }],
+    ["meta", { property: "og:image:height", content: "512" }],
     ["meta", { property: "og:type", content: "website" }],
+    ["meta", { property: "og:site_name", content: "FediMod FIRES" }],
     [
       "meta",
       {
