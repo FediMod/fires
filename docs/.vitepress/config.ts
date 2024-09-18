@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "FediMod FIRES",
   description: "Fediverse moderation Intelligence Replication Endpoint Server",
+  head: [["meta", { property: "og:image", content: "/opengraph-banner.png" }]],
   themeConfig: {
     footer: {
       message:
