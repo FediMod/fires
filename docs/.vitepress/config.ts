@@ -4,7 +4,31 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "FediMod FIRES",
   description: "Fediverse moderation Intelligence Replication Endpoint Server",
-  head: [["meta", { property: "og:image", content: "/opengraph-banner.png" }]],
+  head: [
+    ["meta", { property: "og:image", content: "/opengraph-banner.png" }],
+    ["meta", { property: "og:type", content: "website" }],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content:
+          "Fediverse moderation Intelligence Replication Endpoint Server",
+      },
+    ],
+  ],
+  transformPageData(pageData) {
+    pageData.frontmatter.head ??= [];
+    pageData.frontmatter.head.push([
+      "meta",
+      {
+        property: "og:title",
+        content:
+          pageData.frontmatter.layout === "home"
+            ? `FediMod FIRES`
+            : `${pageData.title} | FediMod FIRES`,
+      },
+    ]);
+  },
   themeConfig: {
     footer: {
       message:
