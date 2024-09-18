@@ -1,7 +1,8 @@
-import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+// withMermaid does defineConfig:
+export default withMermaid({
   title: "FediMod FIRES",
   description: "Fediverse moderation Intelligence Replication Endpoint Server",
   head: [

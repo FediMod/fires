@@ -27,5 +27,63 @@ Some fediverse software may prevent importing domain blocks from denylist CSV fi
 
 To give an idea of how the proposed server fits into the wider ecosystem of moderation tooling in the Fediverse, the end-to-end ecosystem could look something like the following:
 
-> [!CAUTION] TODO: Add diagram image
-> source: [https://gist.github.com/ThisIsMissEm/558d4b7c563935c1942170aff42afda5](https://gist.github.com/ThisIsMissEm/558d4b7c563935c1942170aff42afda5)
+### Moderation Data
+<br>
+
+```mermaid
+%% FIXME: Replace "" nodes with <<->> pending Mermaid 11 support
+%% https://github.com/emersonbottero/vitepress-plugin-mermaid/issues/73
+
+%%{init: {'theme': 'neutral'}}%%
+sequenceDiagram
+    participant SI as Source Instances
+    participant DPS as Data Provider Service
+    participant FIRES as FIRES Server
+    participant Consumer as Data Consumer/Synchroniser
+    participant CI as Consuming Instances
+
+    note over SI,CI: Overview of Ecosystem
+    rect rgb(240, 240, 240)
+        Note over SI: Moderator<br>Blocks Domain
+        SI ->> DPS: Pull/Push of Domain Blocks
+        Note over DPS: Data Provider creates a<br> recommendation or advisory
+        DPS ->> FIRES: Write API<br />(recommendations, advisories)
+        Note over FIRES: Stores changes for<br>recommendations & advisories
+        FIRES ->> DPS: Read API<br />(fetch current state for synchronisation)
+        Consumer ->> FIRES: Pulls Changes
+        FIRES ->> Consumer: ""
+        Note over Consumer: Calculates updates to apply,<br>Involving instance operator
+        Consumer ->> CI: Manages Domain Blocks
+        Note over CI: Domain Blocks & Moderation rules
+    end
+```
+
+### Labels
+<br>
+
+```mermaid
+%% FIXME: Replace "" nodes with <<->> pending Mermaid 11 support
+%% https://github.com/emersonbottero/vitepress-plugin-mermaid/issues/73
+
+%%{init: {'theme': 'neutral'}}%%
+sequenceDiagram
+    participant SI as Source Instances
+    participant DPS as Data Provider Service
+    participant FIRES as FIRES Server
+    participant Consumer as Data Consumer/Synchroniser
+    participant CI as Consuming Instances
+
+    note over SI,CI: Overview of Labels API
+    rect rgb(240, 240, 240)
+        Note over SI: Requests Labels<br> Updating Periodically
+        SI ->> FIRES: Fetch Labels from FIRES
+        FIRES ->> SI: ""
+        Note over DPS: Data Provider<br>manages Labels
+        DPS ->> FIRES: Labels API
+        FIRES ->> DPS: ""
+        Note over FIRES: Stores Labels for Data Providers<br>Provides API for Labels
+        CI ->> FIRES: Lookup Labels
+        FIRES ->> CI: ""
+        Note over CI: Exposes Labels to Moderators<br>and optionally End-Users
+    end
+```
