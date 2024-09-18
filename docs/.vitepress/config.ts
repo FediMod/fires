@@ -7,7 +7,6 @@ export default defineConfig({
   head: [
     ["meta", { property: "og:image", content: "/opengraph-banner.png" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:title", content: "FediMod FIRES" }],
     [
       "meta",
       {
@@ -17,6 +16,19 @@ export default defineConfig({
       },
     ],
   ],
+  transformPageData(pageData) {
+    pageData.frontmatter.head ??= [];
+    pageData.frontmatter.head.push([
+      "meta",
+      {
+        property: "og:title",
+        content:
+          pageData.frontmatter.layout === "home"
+            ? `FediMod FIRES`
+            : `${pageData.title} | FediMod FIRES`,
+      },
+    ]);
+  },
   themeConfig: {
     footer: {
       message:
