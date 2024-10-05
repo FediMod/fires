@@ -11,8 +11,8 @@ hero:
       text: Learn the Concepts
       link: /concepts/
     - theme: alt
-      text: Getting Started
-      link: /manuals/reference-server/
+      text: Project Background
+      link: /concepts/background/
 
 features:
   - title: Only provides advisories and recommendations
