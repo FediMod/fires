@@ -84,11 +84,12 @@ export default withMermaid({
               text: "Firewall-based Federation Management",
               link: "/concepts/federation-firewalls",
             },
-            { text: "Labelling", link: "/concepts/labels" },
             {
               text: "Advisories & Recommendations",
               link: "/concepts/advisories-and-recommendations",
             },
+            { text: "Filters", link: "/concepts/filters" },
+            { text: "Labels", link: "/concepts/labels" },
             { text: "Retractions", link: "/concepts/retractions" },
           ],
         },
