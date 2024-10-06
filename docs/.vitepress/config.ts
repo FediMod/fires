@@ -59,6 +59,10 @@ export default withMermaid({
         text: "Manuals",
         items: [
           {
+            text: "Under Development!",
+            link: "/manuals/",
+          },
+          /* {
             text: "Reference Server",
             link: "/manuals/reference-server/",
           },
@@ -70,6 +74,7 @@ export default withMermaid({
             text: "Example Consumer",
             link: "/manuals/example-consumer/",
           },
+          */
         ],
       },
     ],
@@ -158,7 +163,12 @@ export default withMermaid({
         },
       ],
 
-      "/manuals/reference-server": [
+      "/manuals/": [
+        {
+          text: "Manuals",
+          link: "/manuals/",
+          items: [],
+        },
         {
           text: "Reference Server",
           items: [
@@ -168,8 +178,6 @@ export default withMermaid({
             },
           ],
         },
-      ],
-      "/manuals/example-provider": [
         {
           text: "Example Provider",
           items: [
@@ -179,8 +187,6 @@ export default withMermaid({
             },
           ],
         },
-      ],
-      "/manuals/example-consumer": [
         {
           text: "Example Consumer",
           items: [
