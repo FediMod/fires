@@ -1,6 +1,6 @@
 # Filters
 
-When making a [recommendation or advisory](./advisories-and-recommendations.md), besides just specifying “you can federate with this” or “you probably shouldn’t federate with this” it’s also important to be able to say “federate with this, but with these limitations”.
+When making a [recommendation](./changes/recommendations.md) or [advisory](./changes/advisories.md), besides just specifying “you can federate with this” or “you probably shouldn’t federate with this” it’s also important to be able to say “federate with this, but with these limitations”.
 
 By decomposing actions into filters, we move away from the false binary choice between “block”, “limit” or “silence”, or doing nothing. Filters provide a much more flexible system for moderation rather than more coarse grained actions.
 
