@@ -16,7 +16,7 @@ Other software should integrate with the server and consume the published data, 
 
 For instance, software _could_ be written to selectively apply recommendations based on configured needs using the labels associated with the moderation advisories or recommendations, adjusting the acceptance of recommended actions and filters as necessary for that consumer. Software _could_ also be written to allow downstream consumers to decide to implicitly trust & accept the recommendations provided and apply the actions and filters recommended automatically, even though this is discouraged.
 
-> [!WARNING] Software Implementer Note
+> [!INFO] Software Implementer Note
 > If downstream software chooses to apply their own rulings based on the data, then they should ensure that any changes published with the `recommended_action` of “none” or that have a type of “retraction” should have them re-evaluate their rulings, as these are **retractions of a previous advisory or recommendation**.
 
 **FIRES is also not designed to be a user-facing website or application**, instead it is a tool that data providers can integrate with to simplify the change tracking and distribution of their moderation recommendations and advisories. The only optional component that can be user-facing is the [Label Provider](../terms/label-provider), but we also encourage you to proxy or host this directly via your platform for moderation data.
