@@ -6,8 +6,8 @@ By decomposing actions into filters, we move away from the false binary choice b
 
 ## Predefined Filters
 
-> [!CAUTION]
-> This section of the documentation is still being written.
+> [!WARNING]
+> This section of the documentation may change upon reference implementation.
 
 Below is a table of predefined filters that FediMod FIRES will publish under the FediMod project, that aims to cover many existing filters for fediverse software today, but is not intended to be completely comprehensive.
 

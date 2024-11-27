@@ -90,12 +90,23 @@ export default withMermaid({
               link: "/concepts/federation-firewalls",
             },
             {
-              text: "Advisories & Recommendations",
-              link: "/concepts/advisories-and-recommendations",
+              text: "Managing Changes",
+              link: "/concepts/changes",
+              items: [
+                {
+                  text: "Advisories",
+                  link: "/concepts/changes/advisories",
+                },
+                {
+                  text: "Recommendations",
+                  link: "/concepts/changes/recommendations",
+                },
+                { text: "Retractions", link: "/concepts/changes/retractions" },
+                { text: "Tombstones", link: "/concepts/changes/tombstones" },
+              ],
             },
             { text: "Filters", link: "/concepts/filters" },
             { text: "Labels", link: "/concepts/labels" },
-            { text: "Retractions", link: "/concepts/retractions" },
           ],
         },
         {

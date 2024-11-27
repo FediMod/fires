@@ -104,7 +104,8 @@
   --vp-c-yellow-1: #f9b44e;
   --vp-c-yellow-2: #da8b17;
   --vp-c-yellow-3: #a46a0a;
-  --vp-c-yellow-soft: rgba(234, 179, 8, 0.16);
+  /* --vp-c-yellow-soft: rgba(234, 179, 8, 0.16); */
+  --vp-c-yellow-soft: color-mix(in srgb, var(--vp-c-yellow-1), transparent 50%);
 
   --vp-c-red-1: #f66f81;
   --vp-c-red-2: #f14158;
@@ -223,6 +224,8 @@
   /* DEPRECATED: Use `--vp-c-brand-1` instead. */
   --vp-c-brand: var(--vp-c-brand-1);
 
+  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+
   /*
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -247,7 +250,7 @@
   --vp-c-warning-1: var(--vp-c-yellow-1);
   --vp-c-warning-2: var(--vp-c-yellow-2);
   --vp-c-warning-3: var(--vp-c-yellow-3);
-  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+
 
   --vp-c-danger-1: var(--vp-c-red-1);
   --vp-c-danger-2: var(--vp-c-red-2);
@@ -645,4 +648,27 @@
 .sponsor-icon {
   width: 25px !important;
   height: 25px !important;
+}
+
+p + .custom-block.warning {
+  margin-top: 48px;
+}
+
+.custom-block.warning + h2 {
+  border-top: none;
+  margin-top: 24px;
+}
+
+:is(.vp-external-link-icon, .vp-doc a[href*="://"], .vp-doc a[target="_blank"]):not(.no-icon)::after
+{
+  content: "";
+  color: var(--vp-c-brand-1);
+  transition:
+    color 0.25s,
+    opacity 0.25s;
+}
+
+:is(.vp-external-link-icon, .vp-doc a[href*="://"], .vp-doc a[target="_blank"]):not(.no-icon):hover::after
+{
+  color: var(--vp-c-brand-2);
 }
