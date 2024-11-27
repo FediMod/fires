@@ -4,8 +4,7 @@
 
 At present, to implement moderation information / knowledge sharing via ActivityPub, we would be required to have the server handle all incoming activities from servers that FIRES federates with, which would add significant load to the server, whilst resulting in zero benefits. We would also need to specify additional activity and object types via a FEP, and these types could interact poorly with other applications on the network.
 
-> [!WARNING] TODO
-> Add more details as to why this results in extra traffic
+Whilst ActivityPub can operate in a pull-based manner, synchronising collections of data becomes tricky, since ActivityPub does not have collection synchronisation built-in. Instead, we'd need to rely on complicated synchronisation mechanisms such as [FEP-8fcf](https://codeberg.org/fediverse/fep/src/branch/main/fep/8fcf/fep-8fcf.md#fep-8fcf-followers-collection-synchronization-across-servers).
 
 ## Why not WebSub or Webhooks
 
