@@ -86,8 +86,8 @@ export default withMermaid({
           link: "/concepts/",
           items: [
             {
-              text: "Firewall-based Federation Management",
-              link: "/concepts/federation-firewalls",
+              text: "Federation Management",
+              link: "/concepts/federation-management",
             },
             {
               text: "Managing Changes",
@@ -146,7 +146,7 @@ export default withMermaid({
               link: "/concepts/background/prior-art",
             },
             {
-              text: "Why Not...?",
+              text: "Why Not&hellip;?",
               link: "/concepts/background/why-not",
             },
           ],

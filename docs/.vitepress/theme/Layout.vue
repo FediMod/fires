@@ -9,7 +9,8 @@ const { go } = useRouter()
 const redirects = Object.entries({
   "/concepts/advisories-and-recommendations": "/concepts/changes.html",
   "/concepts/advisories-and-recommendations.html": "/concepts/changes.html",
-  "/concepts/retractions": "/concepts/changes/retractions.html"
+  "/concepts/retractions": "/concepts/changes/retractions.html",
+  "/concepts/federation-firewalls": "/concepts/federation-management.html"
 })
 
 watch(

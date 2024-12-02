@@ -1,3 +1,9 @@
+---
+next:
+  text: "Definitions: Data Provider"
+  link: ./terms/data-provider.html
+---
+
 # Labels
 
 In order to better support interoperability between different FediMod FIRES servers, running as [Data Providers](./terms/data-provider.md), and [Data Consumers](./terms/data-consumer.md), we have introduced the concept of “Labels”.

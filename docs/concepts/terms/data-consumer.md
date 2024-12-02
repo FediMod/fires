@@ -1,3 +1,12 @@
+---
+prev:
+  text: "Definitions: Data Provider"
+  link: /concepts/terms/data-provider.html
+next:
+  text: "Definitions: Label Provider"
+  link: /concepts/terms/label-provider.html
+---
+
 # Data Consumer
 
 > [!CAUTION]
