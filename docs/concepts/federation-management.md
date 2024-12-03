@@ -29,11 +29,11 @@ This model simplifies the processing of inbound and outbound activities by havin
 
 ## FediMod FIRES Implementation
 
-In FediMod Fires, we make use of this firewall-inspired approach to Federation Management, with each Advisory or Recommendation containing a `recommended_policy` and `recommended_filters` properties. The `recommended_policy` values are as follows:
+In FediMod Fires, we make use of this firewall-inspired approach to Federation Management, with each [Advisory](./changes/advisories.md) or [Recommendation](./changes/recommendations.md) containing a `recommended_policy` and `recommended_filters` properties. The `recommended_policy` values are as follows:
 
 * **“accept”** means that we’re explicitly allowing for federation or interaction.
 
-* **“filter”** means to look at the `recommended_filters` property, and to apply the appropriate filtering. This is close to the behaviour of Mastodon’s “silence” and “noop” values for severity.
+* **“filter”** means to look at the `recommended_filters` property, and to apply the [appropriate filtering](./filters.md). This is close to the behaviour of Mastodon’s “silence” and “noop” values for severity.
 
 * **“reject”** means to actively send back a [`Reject` activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-reject) to the sending server, informing them that you did not accept the incoming activity.
 
