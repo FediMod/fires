@@ -29,7 +29,9 @@ This model simplifies the processing of inbound and outbound activities by havin
 
 ## FediMod FIRES Implementation
 
-In FediMod Fires, we make use of this firewall-inspired approach to Federation Management, with each [Advisory](./changes/advisories.md) or [Recommendation](./changes/recommendations.md) containing a `recommended_policy` and `recommended_filters` properties. The `recommended_policy` values are as follows:
+In FediMod Fires, we make use of this firewall-inspired approach to Federation Management, with each [Advisory](./changes/advisories.md) or [Recommendation](./changes/recommendations.md) containing the properties of `recommended_policy` and `recommended_filters`.
+
+The `recommended_policy` values are as follows:
 
 * **“accept”** means that we’re explicitly allowing for federation or interaction.
 
