@@ -28,7 +28,7 @@ const members = [
 
 <VPTeamMembers size="small" :members="members" />
 
-## Project Funding
+## Project funding
 
 <a href="https://nlnet.nl" class="funder-logo" name="ack"><img src="/nlnet-logo.svg?url" alt="Logo NLNet: abstract logo of four people seen from above"></a>
 <a href="https://nlnet.nl/NGI0" class="funder-logo"><img src="/NGI0Entrust_tag.svg?url" alt="Logo NGI Zero: letterlogo shaped like a tag"> </a>

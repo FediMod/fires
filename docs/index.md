@@ -20,7 +20,7 @@ features:
       Rather than prescribing that a given action must be taken, FIRES publishers only suggest an action to take. Consumers of data should always provide control over what is applied to instances.
       <br/><br/>
       Moderators should always make the final decision that is right for their community.
-  - title: Not designed for the creation of denylists
+  - title: Not designed just for the creation of denylists
     details: |
       Whilst a server can publish just information about domain moderation, we shouldn't limited to just domains. Often there's more nuanced data that can be shared with moderation teams.
       <br/><br/>
@@ -34,7 +34,7 @@ features:
     details: |
       Instead of being push-based which requires requires the server to maintain a list of consumers interested in updates, or real-time requiring consumers to always be online.
       <br/><br/>
-      FIRES is designed to allow consumers to periodically refresh their copy of the data using the last change ID known.
+      FIRES is designed to allow consumers to periodically refresh their copy of the data using just the last  known change ID.
 ---
 
 ## Project funding
