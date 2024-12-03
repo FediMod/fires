@@ -13,6 +13,7 @@ In order to better understand FIRES, there are several guiding concepts that are
   - [Recommendations](./changes/recommendations.md)
   - [Retractions](./changes/retractions.md)
   - [Tombstones](./changes/tombstones.md)
+- [Entities](./entities) – the support types of entities.
 - [Filters](./filters) – using filters as part of federation management.
 - [Labels](./labels) – organising moderation decisions using shared vocabularies of labels.
 
