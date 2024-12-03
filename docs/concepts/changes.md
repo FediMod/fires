@@ -1,3 +1,10 @@
+---
+next:
+  text: Entities
+  link: /concepts/entities
+---
+
+
 # Managing Changes
 
 Moderation decisions change over time, they are not a static set of values. Currently moderation decisions in the Fediverse are shared through static snapshots as CSV files. This means that in order to know what changed you have to be able to calculate the difference between the CSV file at time A and time B to know what was changed.
@@ -14,7 +21,7 @@ The `change_id` is a [UUID v7](https://uuid7.com/) identifier, which can be stor
 
 FediMod FIRES is designed to go beyond just blocking domains, and is designed to support sharing moderation decisions about many kinds of entities within the Fediverse.
 
-Every change record has a specific `type`, and refers to a specific entity through the `entity_key` and `entity_kind` properties. For instance, for a `domain` entity, the `entity_key` would be the domain name, and the `entity_kind` would be `domain`.
+Every change record has a specific type, and refers to [specific entity](./entities.md) through the `entity_key` and `entity_kind` properties.
 
 The moderation decisions that can be shared through a FIRES dataset are one of four different types of change records:
 
@@ -23,9 +30,4 @@ The moderation decisions that can be shared through a FIRES dataset are one of f
 - [Retraction](./changes/retractions.md) — reverses a previous moderation recommendation or advisory.
 - [Tombstone](./changes/tombstones.md) — signals the permanent removal an entity from the dataset.
 
-For the initial reference implementation of FIRES, we intend to support the following entity kinds:
-- Domains
-- Actors
-- Hashtags
-
-In the future we may also add support for other entity types including Email Domains, IP Address Ranges, Links, Images, and more.
+The type of a change record is specified by the `type` property, and is always a lowercase string: `advisory`, `recommendation`, `retraction`, or `tombstone`.

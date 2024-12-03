@@ -105,6 +105,7 @@ export default withMermaid({
                 { text: "Tombstones", link: "/concepts/changes/tombstones" },
               ],
             },
+            { text: "Entities", link: "/concepts/entities" },
             { text: "Filters", link: "/concepts/filters" },
             { text: "Labels", link: "/concepts/labels" },
           ],
