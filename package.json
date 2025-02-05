@@ -7,10 +7,10 @@
   },
   "devDependencies": {
     "mermaid": "^11.4.1",
-    "prettier": "3.4.1",
-    "rollup": "^4.27.4",
-    "vite": "^6.0.1",
-    "vitepress": "^1.5.0",
+    "prettier": "3.4.2",
+    "rollup": "^4.34.3",
+    "vite": "^6.1.0",
+    "vitepress": "^1.6.3",
     "vitepress-plugin-mermaid": "^2.0.17"
   }
 }
