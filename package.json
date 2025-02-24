@@ -10,8 +10,7 @@
     "format:check": "prettier --ignore-path .gitignore --check .",
     "prettier:write": "prettier --ignore-path .gitignore --write",
     "version-packages": "changeset version && npm run prettier:write CHANGELOG.md && git add package.json CHANGELOG.md",
-    "release": "npm run build && changeset publish",
-    "prepublishOnly": "npm run build",
+    "release": "changeset publish",
     "local:publish": "op run --env-file=.env.local -- npx changeset version"
   },
   "devDependencies": {
