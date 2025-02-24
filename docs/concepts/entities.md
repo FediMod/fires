@@ -4,9 +4,9 @@ FediMod FIRES is designed to support the exchange of much more than just defeder
 
 For the initial reference implementation of FIRES, we intend to support the following entity kinds:
 
-* Domains
-* Actors
-* Email Domains
+- Domains
+- Actors
+- Email Domains
 
 In the future we may also add support for other entity types including Hashtags, IP Address Ranges, Links, Images, and more.
 
