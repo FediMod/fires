@@ -4,7 +4,6 @@ next:
   link: /concepts/entities
 ---
 
-
 # Managing Changes
 
 Moderation decisions change over time, they are not a static set of values. Currently moderation decisions in the Fediverse are shared through static snapshots as CSV files. This means that in order to know what changed you have to be able to calculate the difference between the CSV file at time A and time B to know what was changed.

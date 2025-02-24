@@ -9,6 +9,7 @@ next:
 In order to better support interoperability between different FediMod FIRES servers, running as [Data Providers](./terms/data-provider.md), and [Data Consumers](./terms/data-consumer.md), we have introduced the concept of “Labels”.
 
 Labels in FediMod FIRES are URIs that can be both:
+
 - followed by a human to view a human readable page explaining the Label
 - dereferenced by software to discover machine readable information about the Label
 
@@ -27,12 +28,12 @@ Initially we expected the JSON representation of Labels to be something like the
 {
   "provider": "Example Label Provider",
   "labels": [
-  	{
-  	  "id": "https://labels.provider.example/#csam",
+    {
+      "id": "https://labels.provider.example/#csam",
       "title": "CSAM",
       "description": "Depictions or descriptions of Child Sexual Abuse Material"
-    },
-	  // ...
+    }
+    // ...
   ]
 }
 ```
@@ -61,7 +62,7 @@ In both designs, servers need not request the entire set of labels or even expos
       "name": "Violent Threat",
       "content": "description for a violent threat"
       // ...
-    },
+    }
     // ...
   ]
 }

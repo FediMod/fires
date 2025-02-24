@@ -4,6 +4,7 @@ next:
   text: Goals & Objectives
   link: ./goals-and-objectives
 ---
+
 # Project Background
 
 The Fediverse currently distributes information about instances that are distributing harmful or illegal content on the Fediverse via lists of domains that should be blocked from federating.

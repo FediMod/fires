@@ -28,6 +28,7 @@ Some fediverse software may prevent importing domain blocks from denylist CSV fi
 To give an idea of how the proposed server fits into the wider ecosystem of moderation tooling in the Fediverse, the end-to-end ecosystem could look something like the following:
 
 ### Moderation Data
+
 <br>
 
 ```mermaid
@@ -59,6 +60,7 @@ sequenceDiagram
 ```
 
 ### Labels
+
 <br>
 
 ```mermaid
