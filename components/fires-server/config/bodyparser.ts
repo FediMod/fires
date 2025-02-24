@@ -31,7 +31,8 @@ const bodyParserConfig = defineConfig({
 
   /**
    * Config for the "multipart/form-data" content-type parser.
-   * File uploads are handled by the multipart parser.
+   *
+   * File uploads are disabled via the DisableMultipartRequestsMiddleware, so this configuration has no effect.
    */
   multipart: {
     /**
@@ -47,7 +48,7 @@ const bodyParserConfig = defineConfig({
      * Maximum limit of data to parse including all files
      * and fields
      */
-    limit: '20mb',
+    limit: '0mb',
     types: ['multipart/form-data'],
   },
 })

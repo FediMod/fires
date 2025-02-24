@@ -27,6 +27,8 @@ server.use([
   () => import('@adonisjs/cors/cors_middleware'),
   () => import('@adonisjs/static/static_middleware'),
   () => import('@adonisjs/vite/vite_middleware'),
+  // Prevents multipart/form-data requests by terminating them early
+  () => import('#middleware/disable_multipart_requests_middleware'),
 ])
 
 /**
