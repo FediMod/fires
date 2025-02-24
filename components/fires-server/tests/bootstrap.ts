@@ -10,6 +10,15 @@ import testUtils from '@adonisjs/core/services/test_utils'
  */
 
 /**
+ * The following code is only needed when you have decided to
+ * override the "reporters" property in the config file.
+ */
+export const activeReporters = ['spec']
+if (process.env.GITHUB_ACTIONS === 'true') {
+  activeReporters.push('github')
+}
+
+/**
  * Configure Japa plugins in the plugins array.
  * Learn more - https://japa.dev/docs/runner-config#plugins-optional
  */
