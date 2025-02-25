@@ -1,29 +1,22 @@
 {
-  "name": "@fedimod/fires-docs",
+  "name": "@fedimod/fires",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.5.0+sha512.11106a5916c7406fe4b8cb8e3067974b8728f47308a4f5ac5e850304afa6f57e2847d7950dfe78877d8d36bfb401d381c4215db3a4c3547ffa63c14333a6fa51",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "format": "prettier --ignore-path .gitignore --write .",
-    "format:check": "prettier --ignore-path .gitignore --check .",
-    "prettier:write": "prettier --ignore-path .gitignore --write",
-    "version-packages": "changeset version && npm run prettier:write CHANGELOG.md && git add package.json CHANGELOG.md",
-    "release": "changeset publish",
-    "local:publish": "op run --env-file=.env.local -- npx changeset version"
+    "ci:version": "changeset version && prettier --write CHANGELOG.md && git add package.json CHANGELOG.md",
+    "ci:release": "changeset publish",
+    "local:publish": "op run --env-file=.env.local -- changeset version"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.12",
-    "mermaid": "^11.4.1",
-    "prettier": "3.4.2",
-    "rollup": "^4.34.3",
-    "vite": "^6.1.0",
-    "vitepress": "^1.6.3",
-    "vitepress-plugin-mermaid": "^2.0.17"
+    "rimraf": "^6.0.1"
   },
-  "workspaces": [
-    "components/*"
-  ]
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@changesets/cli",
+      "prettier"
+    ]
+  }
 }

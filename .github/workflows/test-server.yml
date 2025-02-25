@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "components/fires-server/**"
-      - "package-lock.json"
+      - "pnpm-lock.json"
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -22,22 +22,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: "pnpm"
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
+
       - name: Check formatting
-        working-directory: "components/fires-server/"
-        run: npm run format:check
+        run: pnpm --filter @fedimod/fires-server -r format:check
+
       - name: Lint
-        working-directory: "components/fires-server/"
-        run: npm run lint
+        run: pnpm --filter @fedimod/fires-server -r lint
+
       - name: Typecheck
-        working-directory: "components/fires-server/"
-        run: npm run typecheck
+        run: pnpm --filter @fedimod/fires-server -r typecheck
 
   test:
     runs-on: ubuntu-latest
@@ -72,13 +79,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: "pnpm"
+
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
+
       - name: Run tests
-        working-directory: "components/fires-server/"
-        run: npm test -- --no-clear
+        run: pnpm --filter @fedimod/fires-server -r test
