@@ -1,10 +1,6 @@
 import { RequestListener } from 'node:http'
 import { HttpContext } from '@adonisjs/core/http'
-import {
-  HttpContextFactory,
-  RequestFactory,
-  ResponseFactory,
-} from '@adonisjs/http-server/factories'
+import { HttpContextFactory, RequestFactory, ResponseFactory } from '@adonisjs/core/factories/http'
 
 import inject from 'light-my-request'
 
