@@ -11,8 +11,8 @@
     "dev": "node ace serve --hmr",
     "test": "node ace test",
     "lint": "eslint .",
-    "format": "prettier --ignore-path .gitignore --ignore-path ../../.prettierignore --write .",
-    "format:check": "prettier --ignore-path .gitignore --ignore-path ../../.prettierignore --check .",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "format:check": "prettier --ignore-path .gitignore --check .",
     "typecheck": "tsc --noEmit"
   },
   "imports": {

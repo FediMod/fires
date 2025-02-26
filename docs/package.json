@@ -19,12 +19,5 @@
     "vite": "^6.1.0",
     "vitepress": "^1.6.3",
     "vitepress-plugin-mermaid": "^2.0.17"
-  },
-  "peerDependencies": {
-    "@braintree/sanitize-url": "*",
-    "dayjs": "*",
-    "debug": "*",
-    "cytoscape-cose-bilkent": "*",
-    "cytoscape": "*"
   }
 }
